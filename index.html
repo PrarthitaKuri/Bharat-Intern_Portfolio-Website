@@ -1,43 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <title>Prarthita Kuri – SDE Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">MY WORKS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
+
+<!-- ── CURSOR GLOW ── -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ── NAV ── -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <span class="nav-logo">Portfolio<span class="dot">.</span></span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+    <div class="hero-bg">
+        <div class="grid-lines"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <p class="hero-tag animate-in" style="--d:0.1s">Software Development Engineer</p>
+            <h1 class="animate-in" style="--d:0.25s">
+                <span class="name-serif">Prarthita</span><br>
+                <span class="name-serif outline-text">Kuri</span>
+            </h1>
+            <p class="hero-sub animate-in" style="--d:0.4s">
+                IEM Kolkata &middot; BTech in Compter Science and Engineering &middot; CGPA 9.2 &middot; Building scalable solutions with
+                Python &middot; Java &middot; React &middot; AI/ML
+            </p>
+            <div class="hero-actions animate-in" style="--d:0.55s">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+            <div class="hero-stats animate-in" style="--d:0.7s">
+                <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Internships</span></div>
+                <div class="stat-div"></div>
+                <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Research Papers</span></div>
+                <div class="stat-div"></div>
+                <div class="stat"><span class="stat-num">9.2</span><span class="stat-label">CGPA</span></div>
+            </div>
         </div>
-        <div class="info">
-            <h2>Hello, I'm <span>Prarthita Kuri</span>.</h2>
-            <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
-            <h3>Web designer and developer from India. 
-                I create <br> websites to do businesses do better <br> online.</h3>
-                <br>
-                <h3><span>Top Skills:</span></h3>
-                <br>
-                <h4>Front-End Development</h4>
-                <h4>Web Applications</h4>
-                <h4>Financial Analysis</h4>
-                <a href="#">Hire Me</a>
-        </div>
-        <div class="image">
-            <img src="img.png" class="girl">
-        </div>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/prarthita-kuri"><ion-icon name="logo-linkedIn"></ion-icon></a>
-            <a href="https://www.instagram.com/prar.20?igsh=MXd6aTQ0cDI1NWhrdQ=="><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <div class="hero-photo animate-in" style="--d:0.35s">
+            <div class="photo-frame">
+                <img src="img.png" alt="Prarthita Kuri">
+                <div class="photo-accent"></div>
+            </div>
         </div>
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+    <div class="section-inner">
+        <div class="about-text">
+            <p class="section-eyebrow">About Me</p>
+            <h2>Versatile engineer,<br><span>researcher &amp; builder.</span></h2>
+            <p class="body-copy">
+                With three years of hands-on experience across software development, AI/ML, and research, I blend strong theoretical foundations with real-world engineering. Currently pursuing B.Tech in Computer Science at IEM Kolkata with a 9.2 CGPA.
+            </p>
+            <p class="body-copy">
+                I thrive at the intersection of deep learning, secure systems, and scalable web applications — from post-quantum cryptography to mobile object detection.
+            </p>
+            <div class="about-links">
+                <a href="mailto:prarthitakuri@gmail.com" class="chip" target="_blank">📧 <span>prarthitakuri@gmail.com</span></a>
+                <a href="https://www.linkedin.com/in/prarthita-kuri" target="_blank" class="chip">🔗 LinkedIn</a>
+                <a href="tel:+918910873650" class="chip">📞 +91 8910873650</a>
+            </div>
+        </div>
+        <div class="about-card">
+            <div class="card-inner">
+                <div class="card-line">
+                    <span class="card-key">Degree</span>
+                    <span class="card-val">B.Tech CS&amp;E</span>
+                </div>
+                <div class="card-line">
+                    <span class="card-key">Institute</span>
+                    <span class="card-val">IEM, Kolkata</span>
+                </div>
+                <div class="card-line">
+                    <span class="card-key">CGPA</span>
+                    <span class="card-val accent">9.2 / 10</span>
+                </div>
+                <div class="card-line">
+                    <span class="card-key">Year</span>
+                    <span class="card-val">2023 – Present</span>
+                </div>
+                <div class="card-line">
+                    <span class="card-key">Focus</span>
+                    <span class="card-val">SDE · AI/ML · Research</span>
+                </div>
+                <div class="card-line">
+                    <span class="card-key">Location</span>
+                    <span class="card-val">Kolkata, India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section class="experience" id="experience">
+    <div class="section-inner">
+        <p class="section-eyebrow">Career</p>
+        <h2>Experience</h2>
+        <div class="timeline">
+
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                    <div class="tl-header">
+                        <div>
+                            <h3>Software Development Intern</h3>
+                            <p class="tl-org">Indian Statistical Institute, Kolkata</p>
+                        </div>
+                        <span class="tl-date">Feb 2026 – Present</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Built a secure real-time chat app with <strong>React, TypeScript, TailwindCSS</strong> and end-to-end encryption</li>
+                        <li>Implemented post-quantum cryptography — <strong>Kyber</strong> (key exchange) &amp; <strong>Dilithium</strong> (digital signatures)</li>
+                        <li>Integrated OTP-based login with local storage session persistence across devices</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>React</span><span>TypeScript</span><span>Post-Quantum Crypto</span><span>Auth</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                    <div class="tl-header">
+                        <div>
+                            <h3>AI-ML Engineering Intern</h3>
+                            <p class="tl-org">Google for Developers</p>
+                        </div>
+                        <span class="tl-date">Apr – Jun 2025</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Built <strong>CNNs for image recognition</strong> and on-device object detection for mobile apps</li>
+                        <li>Trained custom models using <strong>TensorFlow Lite &amp; Model Maker</strong></li>
+                        <li>Developed a product image search backend for mobile applications</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>TensorFlow Lite</span><span>CNNs</span><span>Mobile ML</span><span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                    <div class="tl-header">
+                        <div>
+                            <h3>Generative AI Engineering Intern</h3>
+                            <p class="tl-org">Google Cloud Skills Boost</p>
+                        </div>
+                        <span class="tl-date">Jul – Sep 2025</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Built GenAI apps with <strong>Gemini API + Streamlit</strong>; deployed via Cloud Run</li>
+                        <li>Implemented function calling with Python SDK, text generation, and data analysis</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>Gemini API</span><span>Streamlit</span><span>Cloud Run</span><span>LLMs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                    <div class="tl-header">
+                        <div>
+                            <h3>Software Engineering Intern</h3>
+                            <p class="tl-org">J.P. Morgan Chase &amp; Co.</p>
+                        </div>
+                        <span class="tl-date">May – Jun 2024</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Interfaced with stock price data feeds using JP Morgan frameworks</li>
+                        <li>Built data visualizations for live trader dashboards</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>Data Feeds</span><span>Visualization</span><span>Finance Tech</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                    <div class="tl-header">
+                        <div>
+                            <h3>Web Development Intern</h3>
+                            <p class="tl-org">Prodigy InfoTech</p>
+                        </div>
+                        <span class="tl-date">May – Jun 2024</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Built responsive websites with <strong>HTML5, CSS3, JavaScript</strong></li>
+                        <li>Implemented DOM manipulation and client-side scripting</li>
+                    </ul>
+                    <div class="tl-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section class="projects-section" id="projects">
+    <div class="section-inner">
+        <p class="section-eyebrow">Research &amp; Engineering</p>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+            <div class="proj-card featured">
+                <div class="proj-num">01</div>
+                <span class="proj-badge">Published</span>
+                <h3>Non-Invasive Detection of Expired Medicines Using AI</h3>
+                <p>OCR + CNNs + GNNs for tamper-free medicine quality control. Achieved <strong>91% accuracy, 90% F1-score</strong> on the Medicine Tablet Pack dataset.</p>
+                <div class="proj-tags"><span>OCR</span><span>CNN</span><span>GNN</span><span>Computer Vision</span></div>
+                <a href="https://www.researchgate.net/publication/398626984" target="_blank" class="proj-link">View Paper →</a>
+            </div>
+
+            <div class="proj-card featured">
+                <div class="proj-num">02</div>
+                <span class="proj-badge">Published</span>
+                <h3>Breast Ultrasound Lesion Segmentation using DenseNet121 Encoder</h3>
+                <p>DenseNet121 encoder with Global Spatial Attention modules. State-of-the-art on BUSI dataset: <strong>IoU 0.94, Dice 0.94</strong>. Addressed AI bias in medical imaging.</p>
+                <div class="proj-tags"><span>DenseNet</span><span>Attention</span><span>Medical AI</span><span>PyTorch</span></div>
+                <a href="https://www.researchgate.net/publication/398625994" target="_blank" class="proj-link">View Paper →</a>
+            </div>
+
+            <div class="proj-card featured">
+                <div class="proj-num">03</div>
+                <span class="proj-badge">Open Source</span>
+                <h3>Literature Survey — AI-Powered Research Assistant</h3>
+                <p>A modern full-stack app for intelligent literature surveys. Ask questions, get context-aware AI responses. Supports <strong>OpenAI, MistralAI, Groq, Ollama &amp; Google GenAI</strong> with real-time processing.</p>
+                <div class="proj-tags"><span>FastAPI</span><span>React</span><span>OpenAI</span><span>MistralAI</span><span>Groq</span><span>REST API</span></div>
+                <a href="https://github.com/PrarthitaKuri/Literature_survey" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-num">04</div>
+                <span class="proj-badge">Open Source</span>
+                <h3>PathoVision: AI Environmental Health Sentinel</h3>
+                <p>Real-time hazard detection with YOLOv8, disease risk prediction via Gemini API, and privacy-preserving PDF reports. Built with Python, Streamlit &amp; ReportLab.</p>
+                <div class="proj-tags"><span>YOLOv8</span><span>Gemini API</span><span>Streamlit</span><span>Python</span></div>
+                <a href="https://github.com/Software-Engineering-Industry-Project" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-num">04</div>
+                <span class="proj-badge">Open Source</span>
+                <h3>AI-Powered Multi-Agent Risk Management System</h3>
+                <p>A multi-agent AI system designed to proactively identify, analyze, and mitigate risks in real time. 
+                    It integrates market analysis, project monitoring, and intelligent risk scoring to deliver 
+                    actionable insights and predictive decision-making.</p>
+                <div class="proj-tags"><span>Multi-Agent AI</span><span>GenAI</span><span>Risk Analysis</span><span>Automation</span><span>Real-Time Systems</span></div>
+                <a href="https://www.linkedin.com/posts/prarthita-kuri_ai-multiagentsystems-riskmanagement-ugcPost-7447946054467219456-UPzj?utm_source=share&utm_medium=member_android&rcm=ACoAAEZYN0IBAqf7v7NcvgRjgYC2BFpz3PfBUB8" target="_blank" class="proj-link">View Project →</a>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-num">05</div>
+                <span class="proj-badge">Under publication</span>
+                <h3>H₂ Fuel Cell Vehicle Energy Management</h3>
+                <p>AI-assisted energy management system for HFCVs improving efficiency by <strong>12.5%</strong>. Analyzed standard driving cycles for hydrogen consumption and range stability.</p>
+                <div class="proj-tags"><span>AI</span><span>Energy Systems</span><span>Research</span></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section class="skills-section" id="skills">
+    <div class="section-inner">
+        <p class="section-eyebrow">Tech Stack</p>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4>Languages</h4>
+                <div class="skill-pills">
+                    <span>Python</span><span>Java</span><span>C</span><span>JavaScript</span><span>TypeScript</span><span>R</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>Web &amp; Frontend</h4>
+                <div class="skill-pills">
+                    <span>React</span><span>HTML5</span><span>CSS3</span><span>TailwindCSS</span><span>REST APIs</span><span>Responsive Design</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>AI / ML</h4>
+                <div class="skill-pills">
+                    <span>TensorFlow Lite</span><span>PyTorch</span><span>CNNs</span><span>YOLOv8</span><span>DenseNet</span><span>Gemini API</span><span>LLM Finetuning</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4>Tools &amp; Infra</h4>
+                <div class="skill-pills">
+                    <span>Git</span><span>Google Cloud</span><span>Cloud Run</span><span>Streamlit</span><span>FastAPI</span><span>Post-Quantum Crypto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact-section" id="contact">
+    <div class="section-inner contact-inner">
+        <div>
+            <p class="section-eyebrow">Let's connect</p>
+            <h2>Open to SDE<br><span>Internships</span></h2>
+            <p class="body-copy">I'm actively seeking software development engineering internships. If you're building something interesting, I'd love to talk.</p>
+        </div>
+        <div class="contact-links">
+            <a href="mailto:prarthitakuri@gmail.com" class="contact-card">
+                <span class="cc-icon">📧</span>
+                <div>
+                    <p class="cc-label">Email</p>
+                    <p class="cc-val">prarthitakuri@gmail.com</p>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/prarthita-kuri" target="_blank" class="contact-card">
+                <span class="cc-icon">🔗</span>
+                <div>
+                    <p class="cc-label">LinkedIn</p>
+                    <p class="cc-val">linkedin.com/in/prarthita-kuri</p>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/prar.20" target="_blank" class="contact-card">
+                <span class="cc-icon">📸</span>
+                <div>
+                    <p class="cc-label">Instagram</p>
+                    <p class="cc-val">@prar.20</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <p>© 2025 Prarthita Kuri — Designed &amp; built with ❤️</p>
+</footer>
+<script src="script.js"></script>
 </body>
-</html>
